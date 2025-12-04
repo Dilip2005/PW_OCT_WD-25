@@ -5,7 +5,7 @@ test("Login Page",async({page})=>{
     await page.goto("http://leaftaps.com/opentaps/control/main")
     //locate the element -> locator() insie your dom
     //fill()-> pass your input to web application
-    await page.locator("#username").fill("Demosalesmanager")
+    await page.locator("#username").fill("DemoCsr")
     //use differnt username -> DemoCsr
     await page.locator("#password").fill("crmsfa")
     await page.locator(".decorativeSubmit").click()
