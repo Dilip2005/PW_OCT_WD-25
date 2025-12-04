@@ -6,6 +6,7 @@ test("Login Page",async({page})=>{
     //locate the element -> locator() insie your dom
     //fill()-> pass your input to web application
     await page.locator("#username").fill("Demosalesmanager")
+    //use differnt username -> DemoCsr
     await page.locator("#password").fill("crmsfa")
     await page.locator(".decorativeSubmit").click()
     console.log(await page.title())
